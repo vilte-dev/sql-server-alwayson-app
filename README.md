@@ -77,5 +77,5 @@ Para defender exitosamente el proyecto, se realizará la siguiente demostración
 ---
 
 ## 👥 Equipo de Trabajo
-* **[Tu Nombre / Usuario de GitHub]** - Configuración de Red, Active Directory, Testigo de Quórum (PC-03) y Frontend React.
-* **[Nombre de tu Compañero / Usuario de GitHub]** - Configuración de WSFC, Always On (PC-01/PC-02) y Backend ASP.NET.
+* **[Samuel Narciso Vilte Tarraga / vilte_dev]** - Infraestructura local y Aplicación de prueba (ASP.NET + React).
+* **[Nombre / Usuario de GitHub]** - (pongan su rol de trabajo muchachos)
