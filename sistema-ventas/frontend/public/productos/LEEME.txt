@@ -1,0 +1,7 @@
+Aquí están las imágenes de los productos iniciales (PNG o JPG).
+Los nombres deben coincidir con la columna imagen_url de la tabla producto,
+por ejemplo: tomate.png, zanahoria.png, brocoli.png, papa.png ...
+Si una imagen no existe, la caja muestra un recuadro con la inicial del producto.
+
+Los productos nuevos o editados desde el panel de administración NO usan esta carpeta:
+sus imágenes se guardan en backend/CajaApi/wwwroot/uploads/productos/.

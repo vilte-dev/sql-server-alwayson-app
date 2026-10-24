@@ -1,0 +1,6 @@
+bin/
+obj/
+.vs/
+# imágenes subidas desde el panel de administración
+CajaApi/wwwroot/uploads/productos/*
+!CajaApi/wwwroot/uploads/productos/.gitkeep

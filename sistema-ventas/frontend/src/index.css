@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------
+   Paleta TES Supermarket
+   · brand  → verde bosque/esmeralda (acciones principales, marca)
+   · accent → naranja calabaza (resaltados puntuales: administrador, avisos de orden)
+   · stone  → grises cálidos de Tailwind para texto, bordes y fondos
+   · cream  → fondo general de la app
+   ------------------------------------------------------------ */
+@theme {
+  --font-sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  --color-brand-50:  #effaf3;
+  --color-brand-100: #d8f3e1;
+  --color-brand-200: #b4e6c8;
+  --color-brand-300: #82d2a3;
+  --color-brand-400: #4fb87c;
+  --color-brand-500: #2c9d61;
+  --color-brand-600: #1f7f4d;
+  --color-brand-700: #1a653f;
+  --color-brand-800: #185034;
+  --color-brand-900: #14422c;
+  --color-brand-950: #0a2518;
+
+  --color-accent-50:  #fff6ec;
+  --color-accent-100: #ffe9d0;
+  --color-accent-200: #ffd0a0;
+  --color-accent-300: #ffb06a;
+  --color-accent-400: #fb8d37;
+  --color-accent-500: #e0650d;
+  --color-accent-600: #b84f0b;
+  --color-accent-700: #933d0c;
+  --color-accent-800: #77330f;
+  --color-accent-900: #632c10;
+
+  --color-cream: #f6f3ec;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-cream); color: var(--color-stone-900); }
+
+/* Barra de scroll discreta */
+.scroll-thin::-webkit-scrollbar { width: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: var(--color-stone-300); border-radius: 8px; }
+
+/* Solo se imprime el ticket */
+@media print {
+  body * { visibility: hidden; }
+  #ticket, #ticket * { visibility: visible; }
+  #ticket { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none !important; }
+  .no-print { display: none !important; }
+}
